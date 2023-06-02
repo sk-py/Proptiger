@@ -1,0 +1,145 @@
+@import "./colors.scss";
+.enquiry-form {
+    width: 100%;
+    padding-top: 0%;
+    max-width: 33%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    border: 4px solid #5853ff ;
+    background-color: #d0cff0;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+
+    
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    padding: 5%;    
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000000;
+  }
+  
+  input[type="text"],
+  input[type="mailto"],
+  input[type="tel"],
+  input[type="range"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #5853ff;
+    color: #5853ff;
+  }
+  
+  // input[type="range"] {-webkit-appearance: none;
+  //   height: 5px;
+  //   background: #ddd;
+  // }
+  
+  // input[type="range"]::-webkit-slider-thumb {
+  //   -webkit-appearance: none;
+  //   appearance: none;
+  //   width: 15px;
+  //   height: 15px;
+  //   background: #5853ff;
+  //   border-radius: 50%;
+  //   cursor: pointer;
+  // }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    color: #5853ff;
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.radio{
+    display: flex;
+    justify-content: space-around;
+
+}
+.Btn{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-button {
+  background-color: #5853ff;
+  width:50%;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  .Formdiv{
+    padding-top: 1%;
+  }
+
+.h4{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5%;
+  font-size: 1.4rem;
+  border-bottom: 2px solid ;
+  color: black;
+}
+
+
+@media screen and (max-width:1500px) {
+      .enquiry-form{
+        width: 100%;
+        max-width: 70%;
+      }  
+}
+@media screen and (max-width:700px) {
+  .Formdiv{
+    padding: 2%;
+  }    
+  .enquiry-form{
+        width: 100%;
+        max-width: 80%;
+      }  
+}
+@media screen and (max-width:350px){
+  .Formdiv{
+    padding: 2%;
+
+
+    input[type="text"],
+    input[type="mailto"],
+    input[type="tel"],
+    input[type="range"] {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #5853ff;
+      color: #5853ff;
+    }
+  }    
+  .enquiry-form{
+        width: 100%;
+        max-width: 100%;
+      } 
+
+      .h4{
+        font-size: 1rem;
+      }
+}

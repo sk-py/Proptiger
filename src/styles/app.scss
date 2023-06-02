@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:wght@200;300;400;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope',sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    body::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, and Opera */
+    }
+    &:focus{
+        outline-color: #5853ff;
+    }
+}
+
+h1{
+    text-transform: uppercase;
+}
+

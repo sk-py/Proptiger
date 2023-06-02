@@ -1,0 +1,113 @@
+@import "colors";
+
+nav {
+    width: 100%;
+    padding: 0.7rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position:sticky;
+    background-color: $first;
+    top: 0%;
+    z-index: 10;
+    border-bottom: 1px solid $third;
+    // box-shadow: 0 0 0 2px $third;
+
+  > h1{
+    text-transform: uppercase;
+    cursor: pointer;
+    }
+
+  > main{
+    width: 70%;
+    display: flex;
+    justify-content:flex-end;
+    
+  > a{
+    color: $dark;
+    font-weight: 800;
+    margin: 1rem;
+    margin-right: 5%;    
+
+    &:hover {
+       color: $third;
+    }
+    &:focus{
+      outline-color: $third;
+    }
+   }
+
+  }
+  .P{
+    color: $third;
+    font-size: 3rem;
+    letter-spacing: -3px;
+  }
+}
+
+@media screen and (max-width:1000px){
+    nav {
+      padding: 0;
+      
+      > h1{
+        font-size: 0.8rem;
+        padding-bottom: 2%;
+      }
+      > main{
+        width: 100%;
+       
+        > a{
+          font-size: 0.9rem;
+          font-weight: 500;
+          margin-right: 0rem;
+        }
+      }
+      .P{
+        font-size: 2rem;
+      }
+    }
+}
+@media screen and (max-width:400px){
+    nav {
+      padding: 0;
+      
+      > h1{
+        font-size: 0.9rem;
+        
+      }
+      > main{
+        width: 100%;
+       
+        > a{
+          font-weight: 500;
+          margin-right: 0rem;
+        }
+      }
+    }
+    #soc{
+      display:none;
+    }
+}
+
+@media screen and (max-width:430px){
+  nav {
+    padding: 0;
+    
+    > h1{
+      font-size: 0.7rem;
+      padding-bottom: 2%;
+    }
+    > main{
+      width: 100%;
+     
+      > a{
+        font-size: 0.7rem;
+        font-weight: 500;
+        margin-right: 0rem;
+      }
+    }
+    .P{
+      font-size: 1.8rem;
+    }
+  }
+}
